@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,7 +19,23 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'space': ['"Space Grotesk"', 'sans-serif'],
+				'sanchez': ['Sanchez', 'serif'],
+			},
 			colors: {
+				blue: {
+					primary: '#2F8AF5',
+					light: '#E8F3FF',
+				},
+				status: {
+					pending: '#F5F5F5',
+					urgent: '#F75555',
+					progress: '#F5F5F5',
+					longterm: '#F5F5F5',
+					resolved: '#F5F5F5',
+					daily: '#F5F5F5',
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
